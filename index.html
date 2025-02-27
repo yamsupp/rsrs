@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivos pra você me aceitar ❤️</title>
+    
+
+    <style>
+    body{
+        background-image: url(https://img.freepik.com/premium-vector/daisies-petals-pink-background-seamless-pattern-chamomile-flowers_345837-850.jpg);
+    }
+
+@keyframes pulsar {
+    0% {
+        transform: scale(1); 
+        color: azure; 
+    }
+    50% {
+        transform: scale(0.9); 
+    }
+    100% {
+        transform: scale(1); 
+        color: azure; 
+    }
+    
+    
+}
+
+        .H1 {
+        font-size: larger;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        border-radius: 30px;
+        padding: 20px;
+        box-shadow: 0 4px 6px;
+        background-color: pink;
+
+
+        
+
+        }
+        
+        .box {
+            
+            font-weight: bold;
+            font-style: normal;
+            font-size: larger;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            background-image: url(https://i.makeagif.com/media/2-16-2018/xuiDLq.gif);
+            box-shadow: 0 4px 6px rgba( 0, 0, 0, 9);
+            background-color: rgba(white, 0, 0, 0, 1);
+            display: inline-block;
+            text-align: center;
+            line-height: 200px;
+            cursor: pointer;
+            border-radius: 10px;
+            color: azure;
+            animation: pulsar 7.0s infinite;
+            
+        }
+        .box:hover {
+            background-color: cyan;
+        }
+
+        
+        #popup {
+            font-weight: bold;
+            display: none; 
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            background-color: rgb(151, 190, 224);
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #popup button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: pink;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        #popup button:hover {
+            background-color: lightblue;
+        }
+
+        
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7)}
+    </style>
+</head>
+    <h1 class="H1">Oi Tata, aqui tem 32 motivos pra você me aceitar kkkkkkk, perdão te amo</h1>
+
+
+    <div class="box" onclick="mostrarPopup('Eu te admiro de um jeito que não sei nem explicar. Sempre que você sorri, meu coração bate mais forte.')">Motivo 1</div>
+    <div class="box" onclick="mostrarPopup('A cada vez que você fala, o mundo parece parar. E tudo o que eu quero é ouvir você.')">Motivo 2</div>
+    <div class="box" onclick="mostrarPopup('Com você, até os dias mais difíceis ficam mais fáceis. Sua presença é um alicerce que me dá força.')">Motivo 3</div>
+    <div class="box" onclick="mostrarPopup('Eu te vejo de uma forma única. Não existe ninguém como você e nunca vai existir.')">Motivo 4</div>
+    <div class="box" onclick="mostrarPopup('Sei que com você ao meu lado, posso ser a melhor versão de mim mesmo. Você me inspira a querer ser melhor.')">Motivo 5</div>
+    <div class="box" onclick="mostrarPopup('Eu me sinto em paz quando estou perto de você. Como se tudo se encaixasse perfeitamente.')">Motivo 6</div>
+    <div class="box" onclick="mostrarPopup('Eu vou te apoiar, em tudo. Sempre. Não importa o que aconteça, você nunca estará sozinha.')">Motivo 7</div>
+    <div class="box" onclick="mostrarPopup('Nos conhecemos bem pouco, e queria muito te conhecer melhor.')">Motivo 8</div>
+    <div class="box" onclick="mostrarPopup('Você é tudo o que eu sempre pedi pra Deus.')">Motivo 9</div>
+    <div class="box" onclick="mostrarPopup('Acordo toda madrugada pra orar por ti.')">Motivo 10</div>
+    <div class="box" onclick="mostrarPopup('Amo cada expressão sua, você é o amor da minha vida.')">Motivo 11</div>
+    <div class="box" onclick="mostrarPopup('Seu sorriso ilumina meus dias mais sombrios e escuros.')">Motivo 12</div>
+    <div class="box" onclick="mostrarPopup('Quero ser o homem da sua vida.')">Motivo 13</div>
+    <div class="box" onclick="mostrarPopup('Eu amo você, muito.')">Motivo 14</div>
+    <div class="box" onclick="mostrarPopup('Eu quero construir algo real com você. Não algo passageiro, mas algo que resista ao tempo e aos desafios.')">Motivo 15</div>
+    <div class="box" onclick="mostrarPopup('Eu quero ser o alguém que te faz sentir amada e valorizada todos os dias. Não importa o que aconteça, você merece ser cuidada.')">Motivo 16</div>
+    <div class="box" onclick="mostrarPopup('Eu quero estar ao seu lado em todos os momentos, sejam bons ou ruins.')">Motivo 17</div>
+    <div class="box" onclick="mostrarPopup('O jeito como você olha o mundo me faz ver a vida de uma forma mais bonita.')">Motivo 18</div>
+    <div class="box" onclick="mostrarPopup('Seu carinho e atenção são tudo o que eu mais preciso para me sentir feliz.')">Motivo 19</div>
+    <div class="box" onclick="mostrarPopup('Eu adoro cada pequeno gesto que você faz, tudo em você me encanta.')">Motivo 20</div>
+    <div class="box" onclick="mostrarPopup('Cada momento com você é único e especial para mim.')">Motivo 21</div>
+    <div class="box" onclick="mostrarPopup('Eu te admiro por ser tão forte e ter o coração tão bondoso.')">Motivo 22</div>
+    <div class="box" onclick="mostrarPopup('Eu quero passar o resto da minha vida fazendo você sorrir.')">Motivo 23</div>
+    <div class="box" onclick="mostrarPopup('O que mais me encanta em você é a sua sinceridade e gentileza.')">Motivo 24</div>
+    <div class="box" onclick="mostrarPopup('Você tem uma energia tão positiva que me faz querer estar sempre perto de você.')">Motivo 25</div>
+    <div class="box" onclick="mostrarPopup('A forma como você se importa com os outros me inspira a ser uma pessoa melhor.')">Motivo 26</div>
+    <div class="box" onclick="mostrarPopup('Eu sempre aprendo algo novo quando estou com você, e isso é incrível.')">Motivo 27</div>
+    <div class="box" onclick="mostrarPopup('Eu vejo um futuro maravilhoso ao seu lado, cheio de alegrias e desafios compartilhados.')">Motivo 28</div>
+    <div class="box" onclick="mostrarPopup('Você me faz querer ser mais paciente e mais compreensivo.')">Motivo 29</div>
+    <div class="box" onclick="mostrarPopup('Te ouvir falar sobre seus sonhos me faz acreditar que juntos podemos conquistar o mundo.')">Motivo 30</div>
+    <div class="box" onclick="mostrarPopup('Eu gosto de como você é honesta e transparente, sem rodeios.')">Motivo 31</div>
+    <div class="box" onclick="mostrarPopup('Você é tudo o que sempre sonhei em uma pessoa, e mais um pouco.')">Motivo 32</div>
+
+
+    
+    <div id="overlay" onclick="fecharPopup()"></div>
+
+    
+    <div id="popup">
+        <p id="popup-text"></p>
+        <button onclick="fecharPopup()">Fechar</button>
+    </div>
+
+    <script>
+        function mostrarPopup(texto) {
+           
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('popup').style.display = 'block';
+            document.getElementById('popup-text').innerText = texto;
+        }
+
+        function fecharPopup() {
+            
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
