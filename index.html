@@ -1,49 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Motivos pra você me aceitar ❤️</title>
-    
-
     <style>
-    body{
-        background-image: url(https://img.freepik.com/premium-vector/daisies-petals-pink-background-seamless-pattern-chamomile-flowers_345837-850.jpg);
-    }
-
-@keyframes pulsar {
-    0% {
-        transform: scale(1); 
-        color: azure; 
-    }
-    50% {
-        transform: scale(0.9); 
-    }
-    100% {
-        transform: scale(1); 
-        color: azure; 
-    }
-    
-    
-}
-
-        .H1 {
-        font-size: larger;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-        border-radius: 30px;
-        padding: 20px;
-        box-shadow: 0 4px 6px;
-        background-color: pink;
-
-
-        
-
+        body {
+            background-image: url(https://img.freepik.com/premium-vector/daisies-petals-pink-background-seamless-pattern-chamomile-flowers_345837-850.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
         .box {
-            
             font-weight: bold;
             font-style: normal;
             font-size: larger;
@@ -51,8 +29,8 @@
             height: 200px;
             margin: 10px;
             background-image: url(https://i.makeagif.com/media/2-16-2018/xuiDLq.gif);
-            box-shadow: 0 4px 6px rgba( 0, 0, 0, 9);
-            background-color: rgba(white, 0, 0, 0, 1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 9);
+            background-color: rgba(255, 255, 255, 0.5);
             display: inline-block;
             text-align: center;
             line-height: 200px;
@@ -60,21 +38,31 @@
             border-radius: 10px;
             color: azure;
             animation: pulsar 7.0s infinite;
-            
         }
+
         .box:hover {
             background-color: cyan;
         }
 
-        
+        .H1 {
+            font-size: 24px;
+            text-align: center;
+            border-radius: 30px;
+            padding: 20px;
+            box-shadow: 0 4px 6px;
+            background-color: pink;
+            margin-top: 20px;
+        }
+
         #popup {
             font-weight: bold;
-            display: none; 
+            display: none;
             position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 300px;
+            width: 80%;
+            max-width: 400px;
             background-color: rgb(151, 190, 224);
             padding: 20px;
             border-radius: 30px;
@@ -89,13 +77,13 @@
             border: none;
             border-radius: 15px;
             cursor: pointer;
+            width: 100%;
         }
 
         #popup button:hover {
             background-color: lightblue;
         }
 
-        
         #overlay {
             display: none;
             position: fixed;
@@ -103,13 +91,28 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.7)}
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        /* Media Queries para telas menores */
+        @media (max-width: 600px) {
+            .box {
+                width: 150px;
+                height: 150px;
+                font-size: medium;
+            }
+            .H1 {
+                font-size: 18px;
+                padding: 10px;
+            }
+        }
     </style>
 </head>
+<body>
     <h1 class="H1">Oi Tata, aqui tem 32 motivos pra você me aceitar kkkkkkk, perdão te amo</h1>
 
-
-    <div class="box" onclick="mostrarPopup('Eu te admiro de um jeito que não sei nem explicar. Sempre que você sorri, meu coração bate mais forte.')">Motivo 1</div>
+    <div class="container">
+        <div class="box" onclick="mostrarPopup('Eu te admiro de um jeito que não sei nem explicar. Sempre que você sorri, meu coração bate mais forte.')">Motivo 1</div>
     <div class="box" onclick="mostrarPopup('A cada vez que você fala, o mundo parece parar. E tudo o que eu quero é ouvir você.')">Motivo 2</div>
     <div class="box" onclick="mostrarPopup('Com você, até os dias mais difíceis ficam mais fáceis. Sua presença é um alicerce que me dá força.')">Motivo 3</div>
     <div class="box" onclick="mostrarPopup('Eu te vejo de uma forma única. Não existe ninguém como você e nunca vai existir.')">Motivo 4</div>
@@ -141,12 +144,9 @@
     <div class="box" onclick="mostrarPopup('Te ouvir falar sobre seus sonhos me faz acreditar que juntos podemos conquistar o mundo.')">Motivo 30</div>
     <div class="box" onclick="mostrarPopup('Eu gosto de como você é honesta e transparente, sem rodeios.')">Motivo 31</div>
     <div class="box" onclick="mostrarPopup('Você é tudo o que sempre sonhei em uma pessoa, e mais um pouco.')">Motivo 32</div>
+    </div>
 
-
-    
     <div id="overlay" onclick="fecharPopup()"></div>
-
-    
     <div id="popup">
         <p id="popup-text"></p>
         <button onclick="fecharPopup()">Fechar</button>
@@ -154,18 +154,15 @@
 
     <script>
         function mostrarPopup(texto) {
-           
             document.getElementById('overlay').style.display = 'block';
             document.getElementById('popup').style.display = 'block';
             document.getElementById('popup-text').innerText = texto;
         }
 
         function fecharPopup() {
-            
             document.getElementById('popup').style.display = 'none';
             document.getElementById('overlay').style.display = 'none';
         }
     </script>
-
 </body>
 </html>
